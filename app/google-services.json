@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "959356193887",
+    "firebase_url": "https://autenticacion-7954c.firebaseio.com",
+    "project_id": "autenticacion-7954c",
+    "storage_bucket": "autenticacion-7954c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959356193887:android:968450a73b8e8253",
+        "android_client_info": {
+          "package_name": "com.jesus.autenciation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959356193887-8d6lsjd7ke2df98m7maaclq0dnp1gf3q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jesus.autenciation",
+            "certificate_hash": "23856b1ffa1e87ae657406a6b29d8d1ee9dc49f7"
+          }
+        },
+        {
+          "client_id": "959356193887-0ajds09oh0ud4bgtfaqa3fcsom30kl2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD00RSFdPHdN22_lslHCFXouQ7VsA8hhYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959356193887-0ajds09oh0ud4bgtfaqa3fcsom30kl2e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
