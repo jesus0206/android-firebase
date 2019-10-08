@@ -25,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void login() {
+
         FirebaseUser usuario = FirebaseAuth.getInstance().getCurrentUser();
         if (usuario != null) {
             Toast.makeText(this, "inicia sesion: " + usuario.getDisplayName() + " - " + usuario.getEmail() + " - " + usuario.getProviders(), Toast.LENGTH_LONG).show();
@@ -32,11 +33,16 @@ public class LoginActivity extends AppCompatActivity {
             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(i);
         } else {
-            startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder().setAvailableProviders(Arrays.asList(new AuthUI.IdpConfig.Builder(AuthUI.EMAIL_PROVIDER).build(), new AuthUI.IdpConfig.Builder(AuthUI.GOOGLE_PROVIDER).build())).setIsSmartLockEnabled(false).build(), RC_SIGN_IN);
+            startActivityForResult(AuthUI.getInstance()
+                    .createSignInIntentBuilder().setAvailableProviders(Arrays.asList(new
+                            AuthUI.IdpConfig.Builder(AuthUI.EMAIL_PROVIDER).build(), new
+                            AuthUI.IdpConfig.Builder(AuthUI.GOOGLE_PROVIDER).build(),new
+                            AuthUI.IdpConfig.Builder(AuthUI.FACEBOOK_PROVIDER).build()))
+                            .setIsSmartLockEnabled(false).build(), RC_SIGN_IN);
         }
     }
-    @Override
 
+    @Override
     public void onActivityResult(int requestCode, int resultCode,Intent data)
     {
         super.onActivityResult(requestCode, resultCode, data);

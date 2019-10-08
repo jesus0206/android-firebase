@@ -91,4 +91,7 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+
+    <string name="facebook_application_id" translatable="false" >470984833494343</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb470984833494343</string>
 </resources>
